@@ -1,0 +1,8 @@
+name = "backend"
+compatibility_date = "2023-12-01"
+
+[vars]
+JWT_SECRET_KEY = "goodluck"
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMzVmMTcxZGQtNGU4Ny00MDZjLTllMjEtNjZlYjRiZGEyMzg3IiwidGVuYW50X2lkIjoiM2RhMWNlOTI0NTkxMGZlMTE1NTY3NjJjMzA4MWE5YWZmZGZkZjQ3ZmEzMmJmMDdmMWY4MzdiNGFjMDZmODgzMyIsImludGVybmFsX3NlY3JldCI6IjJiZmU4YTdkLTAyMzItNGVmMi1hMmM2LTI0YmY0NWRjZTIyNSJ9.Jy_V9nbPpTGz03YoyMCC9ka2rPrF9jCF2kzEM8v79BA"
+HASH_SALT =  "bestsalt"
+
