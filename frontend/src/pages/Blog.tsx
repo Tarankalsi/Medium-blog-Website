@@ -3,6 +3,7 @@ import Spinner from "../components/utilities/Spinner"
 import { useBlog } from "../hooks"
 import FullBlog from "../components/blogPage/FullBlog"
 import AppBar from "../components/homePage/AppBar"
+import Skeleton from "../components/utilities/Skeleton"
 
 
 
@@ -13,17 +14,20 @@ function Blog() {
     id: id || ""
   })
 
-  if (loading) {
-    return <div>
-      <Spinner />
-    </div>
-  }
+  // if (loading) {
+  //   return <div>
+  //     <Skeleton />
+  //   </div>
+  // }
   return (
     <div>
       <AppBar />
-      <div>
-        {blog ? <FullBlog blog={blog}/> : <h1>Blog Not Found</h1>}
-      </div>
+      { loading ? <div className=" flex justify-center mt-20"><Spinner/></div> :
+        <div>
+          {blog ? <FullBlog blog={blog} /> : <h1>Blog Not Found</h1>}
+        </div>
+      }
+
     </div>
 
   )

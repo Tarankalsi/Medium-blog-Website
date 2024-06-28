@@ -1,5 +1,6 @@
 import AppBar from "../components/homePage/AppBar";
 import BlogCard from "../components/homePage/BlogCard";
+import Skeleton from "../components/utilities/Skeleton";
 import Spinner from "../components/utilities/Spinner";
 import { formatDate } from "../functions/formatDate";
 import { useBlogs } from "../hooks";
@@ -22,7 +23,7 @@ export default function Blogs() {
       <div className="flex justify-center ">
         <div className=" max-w-3xl mx-12 my-12">
 
-          {loading ? <Spinner /> :
+          {loading ? <div className="w-screen"> <Skeleton/>  <Skeleton/> <Skeleton/></div>:
             blogs.map((blog) => (
               <BlogCard
                 key={blog.id} // It's better to use a unique key, such as blog.id if available
