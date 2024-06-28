@@ -77,7 +77,7 @@ export default function Publish() {
 }
 
 
-function TextEditor({onChange}:{onChange: (e: ChangeEvent<HTMLInputElement>) => void}) {
+function TextEditor({onChange}:{onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void}) {
     return (
         <div className="mb-4">
 

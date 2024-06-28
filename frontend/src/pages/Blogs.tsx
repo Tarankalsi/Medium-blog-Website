@@ -1,7 +1,6 @@
 import AppBar from "../components/homePage/AppBar";
 import BlogCard from "../components/homePage/BlogCard";
 import Skeleton from "../components/utilities/Skeleton";
-import Spinner from "../components/utilities/Spinner";
 import { formatDate } from "../functions/formatDate";
 import { useBlogs } from "../hooks";
 

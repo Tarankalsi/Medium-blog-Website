@@ -3,7 +3,7 @@ import Spinner from "../components/utilities/Spinner"
 import { useBlog } from "../hooks"
 import FullBlog from "../components/blogPage/FullBlog"
 import AppBar from "../components/homePage/AppBar"
-import Skeleton from "../components/utilities/Skeleton"
+
 
 
 
@@ -14,11 +14,7 @@ function Blog() {
     id: id || ""
   })
 
-  // if (loading) {
-  //   return <div>
-  //     <Skeleton />
-  //   </div>
-  // }
+  
   return (
     <div>
       <AppBar />
